@@ -1,0 +1,93 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  font-size: 150%;
+}
+
+.bg{
+  background-color: black;
+  background-color: rgba(0,0,0, 0.4);
+  background-image: url("assets/golden.gif");
+  ilter: blur(8px);
+  -webkit-filter: blur(8px);
+  width: 100%;
+  position: absolute;
+  height: 100%;
+}
+
+@-webkit-keyframes pop-in {
+  0% { opacity: 0; -webkit-transform: scale(0.5); }
+  100% { opacity: 1; -webkit-transform: scale(1); }
+}
+
+#container{
+  width: 25%;
+  height: 60%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: floralwhite;
+  border-radius: 7px;
+  box-shadow: 0px 0px 5px 2px black;
+  z-index: 2;
+  -webkit-animation:pop-in 0.5s;
+}
+
+#heading{
+  font-family: 'Caveat', cursive;
+  font-weight: lighter;
+}
+
+#signup-form {
+  align-self: flex-start;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.signup-form-field::placeholder {
+  color: #3a3a3a;
+}
+
+.signup-form-field {
+  border: none;
+  border-bottom: 1px solid #3a3a3a;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  outline: none;
+  padding: 5px 5px 5px 5px;
+  font-size: 60%;
+}
+
+.signup-form-field:hover{
+  background-color: lightgrey;
+}
+
+#signup-form-submit {
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  background-color: #3a3a3a;
+  cursor: pointer;
+  outline: none;
+}
+
+#signup-form-submit:hover{
+  background-color: grey;
+  color:black;
+}
